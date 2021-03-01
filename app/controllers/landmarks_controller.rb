@@ -1,11 +1,11 @@
 class LandmarksController < ApplicationController
-  get '/landmarks' do    #read - shows index page for landmarks 
-      @landmarks = Landmark.all 
+  get '/landmarks' do    #read - shows index page for landmarks
+      @landmarks = Landmark.all
       @figures = Figure.all
       erb :'landmarks/index'
   end
 
-  get '/landmarks/new' do   #create - shows new page to create landmarks 
+  get '/landmarks/new' do   #create - shows new page to create landmarks
       erb :'landmarks/new'
   end
 
